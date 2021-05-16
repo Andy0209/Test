@@ -38,7 +38,7 @@ while running:
         print(woerterbuch_english)
     
     elif auswahl == 'L' or auswahl == 'l':
-        loeschen = input("Welches Wort soll gelöscht werden?" )
+        loeschen = input("Welches Wort soll gelöscht werden? " )
         k = 0 # Laufvariable
         l = 0 # Laufvariable
         
@@ -65,6 +65,7 @@ while running:
         print(woerterbuch_english)
                 
     elif auswahl == 'B' or auswahl == 'b':
+        print("Auf Wiedersehen!")
         running = False
         
     else: # Standardvorgang -> immer mit dem geringsten Risiko
@@ -82,10 +83,11 @@ while running:
         
         while j < maxIndexEN:    
             if suchbegriff.lower() == woerterbuch_english[j].lower():
-                print("Wort im Deutschen lautet:", woerterbuch_deutsch[j], ", DE")
+                print("Word in german means:", woerterbuch_deutsch[j], ", DE")
                 break   
             j += 1
 
 
         if i == maxIndexDE and j == maxIndexEN:
             print("Wort in den Wörterbüchern nicht enthalten")
+
